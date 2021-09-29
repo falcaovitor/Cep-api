@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/cartas.png">
+    <script src="https://kit.fontawesome.com/c8fc454d9e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <h1>Cep</h1>
+                <span><i class="fas fa-home"></i></span>
+            </div>
+            <div class="search">
+                <h2>Pesquisar Cep</h2>
+                
+                
+
+                <div class="form">
+                    <div class="form-group">
+                        <input type="text" id="nCep" placeholder="Cep">
+                        <button id="btnCep">Procurar</button>
+                    </div>
+                    <h4 id="erro">Dados do cep digitado vão aparecer nos campos abaixo</h4>
+                    <div class="form-group-contents">
+                        <div>
+                            <h3>Logradouro:</h3>
+                            <input type="text" id="logradouro" placeholder="logradouro" disabled>
+                        </div>
+                        <div>
+                            <h3>Bairro:</h3>
+                            <input type="text" id="bairro" placeholder="bairro" disabled>
+                        </div>
+                        <div>
+                        <h3>Localidade:</h3>
+                        <input type="text" id="localidade" placeholder="localidade" disabled>
+                        </div>
+                        <div>
+                            <h3>Uf:</h3>
+                            <input type="text" id="uf" placeholder="uf" disabled>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <h2>&copy; Vitor Falcão</h2>
+            </footer>
+        </div>
+    </div>
+    <script src="js/cep.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content{
+    margin-top: 1rem;
+    width: 80%;
+    background-color: lightgray;
+    border-radius: 8px 8px 8px 8px;
+    padding: 2rem;
+    box-shadow: 1.3rem 1.3rem 1rem black;
+}
+.content .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .header h1{
+    font-size: 3rem;
+}
+.content .header span i{
+    font-size: 3rem;
+}
+/*Configuração dos campos*/
+.content .search{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.content .search h2{
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.content .search .form{
+    margin-top: 2rem;
+}
+.content .search .form .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .search .form .form-group input{
+    height: 2.3rem;
+    border: 3px solid black;
+    border-radius: 8px 0px 0px 8px;
+    padding: 0.6rem;
+    outline: none;
+}
+.content .search .form .form-group button{
+    border-radius: 0px 8px 8px 0px;
+    height: 2.3rem;
+    padding: 0.2rem;
+    outline: none;
+    cursor: pointer;
+    border: 3px solid black;
+}
+.content .search .form .form-group button:hover{
+    background: none;
+    transition: .2s;
+}
+.content .search .form .form-group-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.content .search .form .form-group-contents div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+.content .search .form .form-group-contents input{
+    height: 2.3rem;
+    border: 3px solid black;
+    border-radius: 8px 8px 8px 8px;
+    padding: 0.6rem;
+    outline: none;
+}
+.content .search #erro{
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+@media(max-width: 900px){
+    .content{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    footer{
+        margin-top: 1rem;
+    }
+}
+@media(max-width: 400px){
+    .content{
+        margin-top: 0rem;
+        width: 100%;
+    }
+}
